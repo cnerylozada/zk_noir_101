@@ -1,6 +1,2 @@
-[package]
-name = "zk101"
-type = "bin"
-authors = [""]
-
-[dependencies]
+[workspace]
+members = ["circuits/default", "circuits/proof_point"]

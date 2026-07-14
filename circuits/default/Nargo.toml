@@ -1,0 +1,6 @@
+[package]
+name = "default"
+type = "bin"
+authors = [""]
+
+[dependencies]
