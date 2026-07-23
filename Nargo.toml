@@ -1,2 +1,2 @@
 [workspace]
-members = ["circuits/default", "circuits/merkle_allowlist"]
+members = ["circuits/not_equal", "circuits/merkle_allowlist"]
