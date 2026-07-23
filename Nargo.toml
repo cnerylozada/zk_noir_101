@@ -1,2 +1,2 @@
 [workspace]
-members = ["circuits/default", "circuits/proof_point"]
+members = ["circuits/default", "circuits/merkle_allowlist"]

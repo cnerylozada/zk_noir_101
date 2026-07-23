@@ -36,7 +36,7 @@ This is a **Nargo workspace** of Noir ZK circuits. The root `Nargo.toml` declare
 
 **`circuits/panagram`** — magic word guessing game using Poseidon2. Takes `raw_secret_word` as private input, two public hashes (`secret_word_hash`, `user_answer_hash`), returns `bool`. The circuit hashes the secret word internally and compares against both public commitments — `secret_word_hash` binds the prover to a pre-committed word, the return value indicates whether the guess matched.
 
-**`circuits/proof_point`** — Merkle membership proof for an allowlist. Proves a wallet address belongs to a Merkle tree without revealing which address. Uses `bn254::hash_1` to hash `raw_wallet` into a leaf, then `MerkleTree::membership` to verify the sibling path against the public root. Fixed depth 10 (supports up to 1024 addresses).
+**`circuits/merkle_allowlist`** — Merkle membership proof for an allowlist. Proves a wallet address belongs to a Merkle tree without revealing which address. Uses `bn254::hash_1` to hash `raw_wallet` into a leaf, then `MerkleTree::membership` to verify the sibling path against the public root. Fixed depth 10 (supports up to 1024 addresses).
 
 ### Key constraints
 

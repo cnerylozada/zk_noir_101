@@ -1,5 +1,5 @@
 [package]
-name = "proof_point"
+name = "merkle_allowlist"
 type = "bin"
 authors = [""]
 
