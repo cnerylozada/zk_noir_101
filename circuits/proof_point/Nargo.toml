@@ -1,0 +1,6 @@
+[package]
+name = "proof_point"
+type = "bin"
+authors = [""]
+
+[dependencies]
