@@ -2,11 +2,19 @@ use dep::poseidon::poseidon::bn254;
 use dep::trees::merkle::MerkleTree;
 use dep::trees::types::{MembershipProver, MT_Creator};
 
-fn main(raw_wallet: Field, indexes: Field, hash_path: [Field; 10], root: pub Field) {
+fn main(
+    raw_wallet: Field,
+    indexes: Field,
+    hash_path: [Field; 10],
+    root: pub Field,
+    topic_id: pub Field,
+) -> pub Field {
     let leaf = bn254::hash_1([raw_wallet]);
 
     let tree = MerkleTree::from(root, |inputs| bn254::hash_2(inputs));
     tree.membership(leaf, indexes, hash_path);
+    let nullifier = bn254::hash_2([raw_wallet, topic_id]);
+    nullifier
 }
 
 #[test]
