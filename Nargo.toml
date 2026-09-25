@@ -1,2 +1,2 @@
 [workspace]
-members = ["circuits/not_equal", "circuits/merkle_allowlist", "circuits/proof_point", "circuits/panagram"]
+members = ["circuits/not_equal", "circuits/merkle_allowlist", "circuits/proof_point", "circuits/pangram"]

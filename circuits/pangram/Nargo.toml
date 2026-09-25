@@ -1,5 +1,5 @@
 [package]
-name = "panagram"
+name = "pangram"
 type = "bin"
 authors = [""]
 
